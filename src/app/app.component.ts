@@ -11,4 +11,8 @@ export class AppComponent {
   onChange(text: string) {
     console.log(text);
   }
+
+  onClick() {
+    console.log(this.nome);
+  }
 }

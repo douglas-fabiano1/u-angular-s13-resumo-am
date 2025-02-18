@@ -5,8 +5,7 @@
     <input
       type="text"
       name="nome"
-      [ngModel]="nome"
-      (ngModelChange)="onChange($event)"
+      [(ngModel)]="nome"
       matInput
       #nomeControl="ngModel"
       required
@@ -17,7 +16,9 @@
 
   <div>
     <br />
-    <button type="button" [disabled]="meuForm.invalid">Enviar</button>
+    <button type="button" [disabled]="meuForm.invalid" (click)="onClick()">
+      Enviar
+    </button>
     <!-- property binding -->
     <br />
     <br />
