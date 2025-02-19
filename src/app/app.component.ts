@@ -5,14 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  nome = 'Douglas';
+export class AppComponent { }
 
-  onChange(text: string) {
-    console.log(text);
-  }
-
-  onClick() {
-    console.log(this.nome);
-  }
-}
