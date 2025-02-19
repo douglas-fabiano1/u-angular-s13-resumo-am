@@ -1,5 +1,4 @@
 <form #meuForm="ngForm">
-  <!-- template variable-->
   <mat-form-field>
     <mat-label>Nome:</mat-label>
     <input
@@ -16,17 +15,15 @@
 
   <div>
     <br />
+    <br />
+    <p>Valid: {{ nomeControl.valid }}</p>
+    <p>Touched: {{ nomeControl.touched }}</p>
+    <p>Dirty: {{ nomeControl.dirty }}</p>
+    <br />
+    <br />
     <button type="button" [disabled]="meuForm.invalid" (click)="onClick()">
       Enviar
     </button>
-    <!-- property binding -->
-    <br />
-    <br />
-    Valid: {{ nomeControl.valid }}
-    <br />
-    Touched: {{ nomeControl.touched }}
-    <br />
-    Dirty: {{ nomeControl.dirty }}
   </div>
 </form>
 
